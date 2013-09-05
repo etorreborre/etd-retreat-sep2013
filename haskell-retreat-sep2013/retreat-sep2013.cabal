@@ -1,0 +1,25 @@
+Name:               retreat-sep2013
+Version:            0.0.1
+License:            BSD3
+License-File:       LICENSE
+Cabal-version:      >= 1.2
+Build-Type:         Simple
+
+Library
+  Build-Depends:    base < 5 && >= 4
+                    , HUnit
+                    , containers
+                    , array
+                    , QuickCheck
+                    , test-framework
+                    , test-framework-hunit
+                    , test-framework-quickcheck2
+
+  GHC-Options:      -Wall
+                    -fno-warn-unused-imports
+                    -fno-warn-unused-binds
+                    -fno-warn-unused-do-bind
+
+  Hs-Source-Dirs:   src
+
+  Exposed-Modules:  
