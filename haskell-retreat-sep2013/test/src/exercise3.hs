@@ -2,7 +2,6 @@ module Main where
 
 import System.Environment
 import Data.List
-import Control.Applicative
 import Data.Maybe
 
 main :: IO ()
