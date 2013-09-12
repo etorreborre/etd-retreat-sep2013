@@ -21,4 +21,7 @@ slide :: [a] -> Int -> [[a]]
 slide list n = map (take n) (duplicate list)
 
 duplicate :: [a] -> [[a]]
-duplicate list = init $ tails list
+duplicate list = safeInit $ tails list
+  where safeInit [] = []
+        safeInit (x : []) = [x]
+        safeInit (x : xs) = x : safeInit xs
